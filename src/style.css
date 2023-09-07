@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2? family= Red+Hat+Display:wght@500;700;900 & display=swap");
+
+:root {
+  --Paleblue: hsl(229, 89%, 96%);
+  --Brightblue: hsl(245, 75%, 52%);
+  --Verypaleblue: hsl(225, 100%, 99%);
+  --Desaturatedblue: hsl(224, 23%, 55%);
+  --Darkblue: hsl(223, 47%, 23%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.container {
+  background-color: var(--Paleblue);
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+}
+
+.container-padre {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 440px;
+  overflow: hidden;
+  justify-content: center;
+  border-radius: 1rem;
+  -webkit-box-shadow: 24px 17px 28px 7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 24px 17px 28px 7px rgba(0, 0, 0, 0.75);
+  box-shadow: 24px 17px 28px 7px rgba(0, 0, 0, 0.75);
+}
+
+.imagen {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.texto {
+  background-color: var(--Verypaleblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  gap: 2.5rem;
+}
+
+.texto h2 {
+  padding: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
+.texto p {
+  color: var(--Desaturatedblue);
+  text-align: center;
+}
+
+.precio {
+  background-color: var(--Paleblue);
+  display: flex;
+  gap: 1rem;
+  padding: 15px 50px;
+  border-radius: 1rem;
+  width: 100%;
+  justify-content: space-between;
+}
+.plan {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+.plan span {
+  color: var(--Desaturatedblue);
+}
+.logo {
+  display: flex;
+  gap: 1rem;
+}
+
+.change {
+  color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-width: 2px solid var(--Darkblue);
+  text-decoration: underline;
+}
+
+.boton {
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 70px;
+  border-radius: 1rem;
+  color: var(--Verypaleblue);
+  line-height: 1rem;
+  font-size: 14px;
+}
+
+svg {
+  color: var(--Desaturatedblue);
+}
+
+.cancel {
+  color: var(--Desaturatedblue);
+  font-size: 16px;
+}
